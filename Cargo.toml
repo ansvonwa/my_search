@@ -1,0 +1,8 @@
+[package]
+name = "my_search"
+version = "0.1.0"
+authors = ["Anselm von Wangenheim <anselm.w@gmx.de>"]
+
+[dependencies]
+hyper = "0.11"
+reqwest = "0.8.1"
