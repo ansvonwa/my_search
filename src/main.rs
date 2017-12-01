@@ -6,7 +6,7 @@ use reqwest::Url;
 
 fn main() {
   let mut count = 0_i32;
-  let listener = TcpListener::bind("127.0.0.1:8080").unwrap();
+  let listener = TcpListener::bind("127.0.0.1:8081").unwrap();// TODO change back to port 8080 before building
   for stream in listener.incoming() {
     count += 1;
     let im_count = count;
