@@ -23,7 +23,8 @@ Go to [settings](chrome://settings/searchEngines), click add and enter "my_searc
 ## TODO
 
 - [x] provide results from duckduckgo
-- [ ] implement custom !bangs
+- [x] proof of concept for custom !bangs (!yt!)
+- [ ] implement config for custom !bangs
 - [ ] security (send private results only to localhost)
 - [ ] matches from bookmarks and personal history
 - [ ] merge results together
