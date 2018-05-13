@@ -40,7 +40,7 @@ fn handle_client(mut out: TcpStream, count: i32) {
   if get.is_none() { return; }
   let get = get.unwrap();
 
-  let yt_re = Regex::new("(%21yt%21|yt%21%21|%21%21yt)").unwrap();
+  let yt_re = Regex::new("(%21yt%21|yt%21%21|%21%21yt|!yt!|yt!!|!!yt)").unwrap();
   if yt_re.find(&get[..]).is_some() {
     println!("MATCHED !yt!{}", get);
     if bang_youtube(&out, &yt_re.replace(&get[..], "")[4..]) { return; }
